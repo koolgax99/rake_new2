@@ -1,8 +1,9 @@
 # Import libraries
-import string
 import re
+import string
 from collections import Counter, defaultdict
-from itertools import groupby, product, chain
+from itertools import chain, groupby, product
+
 import nltk
 
 """nltk.download('stopwords')
