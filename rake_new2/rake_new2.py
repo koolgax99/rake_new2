@@ -8,11 +8,9 @@ from itertools import groupby
 from itertools import product
 
 import nltk
-
 """nltk.download('stopwords')
 nltk.download('punkt')"""
 from nltk.tokenize import wordpunct_tokenize
-
 """WHY USE wordpunct_tokenize INSTEAD OF word_tokenize ?
 -> Example :
 Say, text = "You're silly"
@@ -26,11 +24,11 @@ Hence, wordpunct_tokenize > word_tokenize"""
 
 class Rake:
     def __init__(
-        self,
-        stopwords=None,
-        punctuations=None,
-        language="english",
-        keep_html_tags=False,
+            self,
+            stopwords=None,
+            punctuations=None,
+            language="english",
+            keep_html_tags=False,
     ):
         # Stopwords
         self.stopwords = stopwords
